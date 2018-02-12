@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yeshujian.github.io/"/>
-  <updated>2018-02-12T08:47:59.014Z</updated>
+  <updated>2018-02-12T08:59:30.017Z</updated>
   <id>https://yeshujian.github.io/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="https://yeshujian.github.io/2018/02/12/markdown%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%B5%8B%E8%AF%95/"/>
     <id>https://yeshujian.github.io/2018/02/12/markdown流程图测试/</id>
     <published>2018-02-12T08:47:38.000Z</published>
-    <updated>2018-02-12T08:47:59.014Z</updated>
+    <updated>2018-02-12T08:59:30.017Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="markdown流程图测试"><a href="#markdown流程图测试" class="headerlink" title="markdown流程图测试"></a>markdown流程图测试</h1><div id="flowchart-0" class="flow-chart"></div><p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始rain?=>condition: 今天有雨吗？takeAnUmbrella=>operation: 带伞go=>operation: 出门e=>end: 结束st->rain?rain?(yes)->takeAnUmbrella->gorain?(no)->go->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="markdown流程图测试"><a href="#markdown流程图测试" class="headerlink" title="markdown流程图测试"></a>markdown流程图测试</h1><p><center></center></p><div id="flowchart-0" class="flow-chart"></div><p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始rain?=>condition: 今天有雨吗？takeAnUmbrella=>operation: 带伞go=>operation: 出门e=>end: 结束st->rain?rain?(yes)->takeAnUmbrella->gorain?(no)->go->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;markdown流程图测试&quot;&gt;&lt;a href=&quot;#markdown流程图测试&quot; class=&quot;headerlink&quot; title=&quot;markdown流程图测试&quot;&gt;&lt;/a&gt;markdown流程图测试&lt;/h1&gt;&lt;div id=&quot;flowchart-0&quot; class=&quot;
+        &lt;h1 id=&quot;markdown流程图测试&quot;&gt;&lt;a href=&quot;#markdown流程图测试&quot; class=&quot;headerlink&quot; title=&quot;markdown流程图测试&quot;&gt;&lt;/a&gt;markdown流程图测试&lt;/h1&gt;&lt;p&gt;&lt;center&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;div
       
     
     </summary>

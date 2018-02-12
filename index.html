@@ -325,7 +325,17 @@
       
         
           
-            <h1 id="markdown流程图测试"><a href="#markdown流程图测试" class="headerlink" title="markdown流程图测试"></a>markdown流程图测试</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">rain?=&gt;condition: 今天有雨吗？</span><br><span class="line">takeAnUmbrella=&gt;operation: 带伞</span><br><span class="line">go=&gt;operation: 出门</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line"></span><br><span class="line">st-&gt;rain?</span><br><span class="line">rain?(yes)-&gt;takeAnUmbrella-&gt;go</span><br><span class="line">rain?(no)-&gt;go-&gt;e</span><br></pre></td></tr></table></figure>
+            <h1 id="markdown流程图测试"><a href="#markdown流程图测试" class="headerlink" title="markdown流程图测试"></a>markdown流程图测试</h1><div id="flowchart-0" class="flow-chart"></div>
+
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始
+rain?=>condition: 今天有雨吗？
+takeAnUmbrella=>operation: 带伞
+go=>operation: 出门
+e=>end: 结束
+
+st->rain?
+rain?(yes)->takeAnUmbrella->go
+rain?(no)->go->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 
           
         

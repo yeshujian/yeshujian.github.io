@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yeshujian.github.io/"/>
-  <updated>2018-01-18T01:26:14.410Z</updated>
+  <updated>2018-02-12T08:47:59.014Z</updated>
   <id>https://yeshujian.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdowntest</title>
+    <link href="https://yeshujian.github.io/2018/02/12/markdown%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%B5%8B%E8%AF%95/"/>
+    <id>https://yeshujian.github.io/2018/02/12/markdown流程图测试/</id>
+    <published>2018-02-12T08:47:38.000Z</published>
+    <updated>2018-02-12T08:47:59.014Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="markdown流程图测试"><a href="#markdown流程图测试" class="headerlink" title="markdown流程图测试"></a>markdown流程图测试</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">rain?=&gt;condition: 今天有雨吗？</span><br><span class="line">takeAnUmbrella=&gt;operation: 带伞</span><br><span class="line">go=&gt;operation: 出门</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line"></span><br><span class="line">st-&gt;rain?</span><br><span class="line">rain?(yes)-&gt;takeAnUmbrella-&gt;go</span><br><span class="line">rain?(no)-&gt;go-&gt;e</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;markdown流程图测试&quot;&gt;&lt;a href=&quot;#markdown流程图测试&quot; class=&quot;headerlink&quot; title=&quot;markdown流程图测试&quot;&gt;&lt;/a&gt;markdown流程图测试&lt;/h1&gt;&lt;figure class=&quot;highlight plai
+      
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="https://yeshujian.github.io/tags/markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Python-01class</title>
@@ -67,7 +90,7 @@
     <link href="https://yeshujian.github.io/2017/12/27/python/"/>
     <id>https://yeshujian.github.io/2017/12/27/python/</id>
     <published>2017-12-27T13:41:12.000Z</published>
-    <updated>2018-01-02T07:12:32.507Z</updated>
+    <updated>2018-02-12T08:42:26.870Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://Python.org/" target="_blank" rel="noopener">Python</a>!</p><h2 id="Get-Start"><a href="#Get-Start" class="headerlink" title="Get Start"></a>Get Start</h2><h3 id="First"><a href="#First" class="headerlink" title="First"></a>First</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> this</span><br></pre></td></tr></table></figure><h3 id="Then"><a href="#Then" class="headerlink" title="Then"></a>Then</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">The Zen of Python, by Tim Peters</span><br><span class="line"></span><br><span class="line">Beautiful <span class="keyword">is</span> better than ugly.</span><br><span class="line">Explicit <span class="keyword">is</span> better than implicit.</span><br><span class="line">Simple <span class="keyword">is</span> better than complex.</span><br><span class="line">Complex <span class="keyword">is</span> better than complicated.</span><br><span class="line">Flat <span class="keyword">is</span> better than nested.</span><br><span class="line">Sparse <span class="keyword">is</span> better than dense.</span><br><span class="line">Readability counts.</span><br><span class="line">Special cases aren<span class="string">'t special enough to break the rules.</span></span><br><span class="line"><span class="string">Although practicality beats purity.</span></span><br><span class="line"><span class="string">Errors should never pass silently.</span></span><br><span class="line"><span class="string">Unless explicitly silenced.</span></span><br><span class="line"><span class="string">In the face of ambiguity, refuse the temptation to guess.</span></span><br><span class="line"><span class="string">There should be one-- and preferably only one --obvious way to do it.</span></span><br><span class="line"><span class="string">Although that way may not be obvious at first unless you'</span>re Dutch.</span><br><span class="line">Now <span class="keyword">is</span> better than never.</span><br><span class="line">Although never <span class="keyword">is</span> often better than *right* now.</span><br><span class="line">If the implementation <span class="keyword">is</span> hard to explain, it<span class="string">'s a bad idea.</span></span><br><span class="line"><span class="string">If the implementation is easy to explain, it may be a good idea.</span></span><br><span class="line"><span class="string">Namespaces are one honking great idea -- let'</span>s do more of those!</span><br></pre></td></tr></table></figure><h3 id="End"><a href="#End" class="headerlink" title="End"></a>End</h3><p>This is end!</p>]]></content>
     

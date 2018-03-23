@@ -155,6 +155,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-apache配置多域名绑定多端口" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/23/apache配置多域名绑定多端口/">apache配置</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/23/apache配置多域名绑定多端口/" class="archive-article-date">
+  	<time datetime="2018-03-23T06:51:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="apache配置多域名绑定多端口"><a href="#apache配置多域名绑定多端口" class="headerlink" title="apache配置多域名绑定多端口"></a>apache配置多域名绑定多端口</h1><p>在apache默认conf/extra/下的httpd-vhost.conf文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Include .../apache/conf/vhost/*.conf</span><br><span class="line"></span><br><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line"> ServerName  www.example1.com</span><br><span class="line">    ServerAlias www.example1.com</span><br><span class="line">    ProxyPreserveHost On</span><br><span class="line">    ProxyRequests Off</span><br><span class="line">    ProxyPass / http://xxx.xxx.xxx.xxx:xxxx/  IP加端口号</span><br><span class="line">    ProxyPassReverse / http://xxx.xxx.xxx.xxx:xxxx/</span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line"> ServerName  www.example2.com</span><br><span class="line">    ServerAlias www.example2.com</span><br><span class="line">    ProxyPreserveHost On</span><br><span class="line">    ProxyRequests Off</span><br><span class="line">    ProxyPass / http://xxx.xxx.xxx.xxx:xxxx/</span><br><span class="line">    ProxyPassReverse / http://xxx.xxx.xxx.xxx:xxxx/</span><br><span class="line"></span><br><span class="line">&lt;/VirtualHost&gt;</span><br></pre></td></tr></table></figure>
+<p>在…/apache/conf/vhost/下</p>
+<p>应有<br>www.example1.com.conf<br>www.example2.com.conf<br>两个配置文件内容如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;VirtualHost *:xxxx&gt; #对应端口号</span><br><span class="line">    ServerName www.example1.com</span><br><span class="line">    ServerAlias www.example1.com</span><br><span class="line">    DocumentRoot /data/www/example1 #对应网站位置</span><br><span class="line">    &lt;Directory /data/www/example1&gt;</span><br><span class="line">        SetOutputFilter DEFLATE</span><br><span class="line">        Options FollowSymLinks</span><br><span class="line">        AllowOverride All</span><br><span class="line">        Order Deny,Allow</span><br><span class="line">        Require all granted</span><br><span class="line">        DirectoryIndex index.php index.html index.htm</span><br><span class="line">    &lt;/Directory&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/VirtualHost&gt;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">apache</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/23/apache配置多域名绑定多端口/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-markdown流程图测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -569,7 +647,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -577,7 +655,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">apache</a>
               </li>
             
             <div class="clearfix"></div>
